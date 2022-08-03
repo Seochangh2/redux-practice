@@ -7,16 +7,18 @@ import DisplayNumberRoot from "./components/DisplayNumberRoot";
 function App() {
   const getClick = async () => {
     try {
-      axios.get("http://alexjun12.loca.lt/bike/unlockRequest");
+      //axios.get("http://alexjun12.loca.lt/bike/unlockRequest");
+      axios.get("http://175.123.140.225:8080/test");
     } catch (error) {
       console.log("s;kdjal");
     }
   };
   const postClick = async (post: string) => {
     try {
-      axios.post("http://alexjun12.loca.lt/bike/lockBike", {
-        lockbike: post,
-      });
+      // axios.post("http://alexjun12.loca.lt/bike/lockBike", {
+      //   lockbike: post,
+      // });
+      axios.get("http://175.123.140.225:8080/test", {});
       console.log(post);
     } catch (e) {
       console.log("sdad");
