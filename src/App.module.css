@@ -1,0 +1,35 @@
+.btn {
+  position: relative;
+  border: none;
+  display: inline-block;
+  padding: 2% 4%;
+  border-radius: 40%;
+  font-family: "paybooc-Light", sans-serif;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+  background-color: aliceblue;
+  color: #1e6b7b;
+}
+.btn:active {
+  transform: scale(1.5);
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+.JJY {
+  height: 10vh;
+  background-color: brown;
+}
+.App {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+div {
+  border: 5px solid #764abc;
+  margin: 2%;
+  color: blueviolet;
+  padding: 2%;
+}
