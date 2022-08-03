@@ -1,6 +1,5 @@
 import AddNumber from "./AddNumber";
 import React, { Component } from "react";
-import store from "../store";
 export default class DisplayNumber extends Component {
   render() {
     return (
