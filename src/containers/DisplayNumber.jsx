@@ -1,8 +1,15 @@
 import React, { Component } from "react";
 import DisplayNumber from "../components/DisplayNumber";
 import { connect } from "react-redux";
-export default connect()(DisplayNumber);
-
+export default connect(mapReduxStateToReactProps)(DisplayNumber);
+function mapReduxStateToReactProps(state) {
+  return {
+    number: state.number,
+  };
+}
+function mapReduxDispatchToReactProps() {
+  return {};
+}
 // import store from "../store";
 // export default class extends Component {
 //   state = { number: store.getState().number };
